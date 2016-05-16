@@ -1,3 +1,3 @@
-# homenicer
+# homenicer-infopage
 
-Website für den WG-Organizer
+Infopage über den WG-Organizer Homenicer

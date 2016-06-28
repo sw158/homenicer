@@ -36,12 +36,13 @@
 
 <!----------------------------- Navigation --------------------------------------------------->
 <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                 <i class="fa fa-bars"></i>
             </button>
-            <a class="navbar-brand page-scroll" href="#page-top">
+            <a class="navbar-brand page-scroll" href="#page-top" id="logo">
                 <img src="img/logo.png" class="img-responsive center-block" alt="Homenicer"/>
             </a>
         </div>
@@ -57,11 +58,12 @@
                     <a class="page-scroll" href="#home">Home</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#dashboard">Impressionen</a>
-                </li>
-                <li>
                     <a class="page-scroll" href="#about">Über Uns</a>
                 </li>
+                <li>
+                    <a class="page-scroll" href="#dashboard">Impressionen</a>
+                </li>
+
             </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -69,104 +71,121 @@
     <!-- /.container -->
 </nav>
 
-<!---------------------------------------------- Video Header ------------------------------------------->
+<!--------------- Video Header ------------------------------->
 <header>
-            <div class="row" id="home">
-                <div align="center" class="embed-responsive embed-responsive-16by9">
-                    <video autoplay loop class="embed-responsive-item">
-                        <source src="img/Homenicer_Teaser.mp4" type="video/mp4">
-                    </video>
-
-                </div>
-
-            </div>
-    <!--------------Scroll-Button---------------------->
-    <a href="#dashboard" class="btn btn-circle page-scroll">
-        <i class="fa fa-angle-double-down animated"></i>
-    </a>
+    <div class="row" id="home">
+        <div align="center" class="embed-responsive embed-responsive-16by9">
+            <video autoplay loop class="embed-responsive-item" src="img/Homenicer_Teaser.mp4" type="video/mp4">
+            </video>
+        </div>
+        <!--------------- Scroll Button ------------------------------->
+        <!--<a href="#about" class="btn btn-circle page-scroll text-center">
+            <i class="fa fa-angle-double-down animated"></i>
+        </a>-->
+    </div>
 </header>
 
-<!-- Screens Section -->
+<!--------------- About US Section ------------------------------->
+<section id="about" class="container content-section text-center">
+    <div class="row">
+        <div class="col-md-2">
+            <img src="img/maskottchen-01.png" class="img-responsive" alt="maskottchen_01">
+        </div>
+        <div class="col-md-8 ">
+            <h2>About Us</h2>
+            <p><strong>Orga-Nice your Home</strong>, das ist das Motto von Homenicer. Die App unterstützt dich bei
+                der
+                Verwaltung deines Haushaltes und Mitbewohner. Erstelle einen Putzplan oder eine Einkaufsliste und
+                behalte sie im
+                Blick.</p>
+        </div>
+        <div class="col-md-2">
+            <img src="img/maskottchen-02.png" class="img-responsive" alt="maskottchen_02">
+        </div>
+    </div><!-- ende row  -->
+</section><!-- ende container  -->
+
+<!--------------- Impressionen ------------------------------->
+
+<!--------------- Dashboard Section ------------------------------->
 <section id="dashboard" class="container content-section">
     <div class="row">
-        <div class="col-sm-12 col-md-7 text-center">
+        <div class="col col-sm-12 col-md-4 text-center">
             <img src="img/dashboard.jpg" class="img-responsive" alt="dashboard">
         </div>
-                <div class="col-sm-12 col-md-5 text-center">
+        <div class="col col-sm-12 col-md-offset-3 col-md-5 text-center">
 
             <h2>Das Dashboard</h2>
             <p>Sehe auf dem ersten Blick was für den heutigen Tag ansteht oder bearbeite direkt die offenen
                 Anfragen!</p>
         </div>
-    </div>
-</section>
+    </div><!-- ende row  -->
+</section><!-- ende container  -->
+
+<!--------------- Putzplan Section ------------------------------->
 <section id="putzplan" class="container content-section">
     <div class="row">
-        <div class="col-sm-12 col-md-7 text-center">
+        <div class="col col-sm-12 col-md-5 text-center">
             <h2>Der Putzplan</h2>
             <p>Du siehst sofort bis wann du deinen aktuellen Putzdienst zu erledigen musst. Filtere zwischen
                 deinen Aufgaben und denen deiner Mitbewohner.</p>
         </div>
-        <div class="col-sm-12 col-md-5 text-center">
-            <img src="img/putzplan.jpg" class="img-responsive center-block" alt="Putzplan">
+        <div class="col col-sm-12 col-md-offset-4  col-md-3 text-center">
+            <img src="img/putzplan.jpg" class="img-responsive" alt="Putzplan">
         </div>
 
-    </div>
-</section>
+    </div><!-- ende row  -->
+</section><!-- ende container  -->
+
+<!--------------- Einkaufsliste Section ------------------------------->
 <section id="einkaufsliste" class="container content-section">
     <div class="row">
-        <div class="col-sm-12 col-md-7 text-center">
-            <img src="img/einkaufsliste.jpg" class="img-responsive center-block" alt="Einkaufsliste">
+        <div class="col col-sm-12 col-md-4 text-center">
+            <img src="img/einkaufsliste.jpg" class="img-responsive" alt="Einkaufsliste">
         </div>
-        <div class="col-sm-12 col-md-5 text-center">
+        <div class="col col-sm-12 col-md-offset-3 col-md-5 text-center">
             <h2>Die Einkaufsliste</h2>
             <p>Sehe auf einen Blick was du für die WG besorgen musst. Füge neue Produkte hinzu oder hake
                 eingekauftes ab.</p>
         </div>
-    </div>
-</section>
+    </div> <!-- ende row  -->
+</section> <!-- ende container  -->
+
+<!--------------- Meine WG Section ------------------------------->
 <section id="meinewg" class="container content-section">
     <div class="row">
-        <div class="col-sm-12 col-md-7 text-center">
+        <div class="col col-sm-12 col-md-5 text-center">
             <h2>Meine WG</h2>
             <p>Durch erledigte Aufgaben erhälst du Achievements, vergleiche dich mit deinen Mitbewohnern.</p>
-
-    </div>
-    <div class="col-sm-12 col-md-5 text-center">
-        <img src="img/meinewg.jpg" class="img-responsive center-block" alt="Meine WG">
-    </div>
-</div>
-</section>
-
-<!-- Download Section -->
-<section id="about" class="content-section text-center">
-    <div class="row">
-        <div class="container">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>About Us</h2>
-                <p><strong>Orga-Nice your Home</strong>, das ist das Motto von Homenicer. Die App unterstützt dich bei
-                    der
-                    Verwaltung deines Haushaltes und Mitbewohner. Erstelle einen Putzplan oder eine Einkaufsliste und
-                    behalte sie im
-                    Blick.</p>
-            </div>
         </div>
-    </div>
-</section>
+        <div class="col col-sm-12 col-md-offset-4  col-md-3 text-center">
+            <img src="img/meinewg.jpg" class="img-responsive" alt="Meine WG">
+        </div>
+    </div><!-- ende row  -->
+</section><!-- ende container  -->
 
-<!-- Footer -->
+<!--------------- Maskottchen ------------------------------->
+<section id="maskottchen" class="container content-section">
+    <div class="row">
+        <div class="col col-sm-12">
+            <img src="img/maskottchen_bedeutung.png" class="img-responsive" alt="Maskottchen">
+        </div>
+    </div><!-- ende row  -->
+</section><!-- ende container  -->
+
+<!--------------- Footer ------------------------------->
 <footer>
-    <div class="container">
+    <div class="container" id="footer">
         <hr>
         <div class="col-lg-12">
             <div class="col-md-6">
-                <a href="#">Impressum</a> | <a href="">Kontakt</a>
+                <a href="impressum.html">Impressum</a> | <a href="contact.html">Kontakt</a>
             </div>
             <div class="col-md-2">
                 <a href="https://www.facebook.com/homenicer/" target="_blank"><i id="social-fb"
-                                                                 class="fa fa-facebook-square fa-3x social"></i></a>
+                                                                                 class="fa fa-facebook-square fa-3x social"></i></a>
                 <a href="https://www.instagram.com/homenicer/" target="_blank"><i id="social-in"
-                                                                  class="fa fa-instagram fa-3x social"></i></a>
+                                                                                  class="fa fa-instagram fa-3x social"></i></a>
             </div>
             <div class="col-md-4">
                 <a class="muted pull-right">© 2016 Homenicer. All rights reserved</a>
